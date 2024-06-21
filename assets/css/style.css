@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    color: red !important;
+}
+
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.dashboard {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.dashboard header {
+    text-align: center; 
+}
+
+.dashboard header h4 {
+    color: rgb(230, 24, 58);
+}
+
+.dashboard .cd {
+    margin: 20px 0;
+}
+
+.cd .cd-thumb {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://cdn.tuoitre.vn/thumb_w/640/471584752817336320/2023/1/5/khoi-tai-san-cua-ca-si-son-tung-mtp-do-so-co-nao-091145-16729038226001862283060.jpg');
+}
+
+.dashboard .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control .btn {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.control .btn-toggle-play {
+    background-color: aqua;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.control .fa-circle-pause {
+    /* display: none; */
+}
+
+
+.dashboard .progress {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+}
+
+.playlist .song {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    padding: 8px;
+    background: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.song.active-song {
+    background-color: #4CAF50;
+
+}
+.song:active{
+    opacity: 0.8;
+}
+
+.song .thumb {
+    height: 90px;
+    flex: 1;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.song .body {
+    flex: 3;
+    text-align: left;
+}
+
+.song .option {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
